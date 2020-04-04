@@ -77,7 +77,17 @@ class Point {
 }
 
 class Canvas{
-	List<Points> points = new List<>;
+	List<Canvas> list;
 
-
+	public Canvas(List<Canvas> list) {
+		this.list = list;
+	}
+	public void addPoint(Point point){
+		list.add(point);
+	}
+	public void removePoint(Point point){
+		if(list.indexOf(point) != -1 )
+			list.remove(lis.indexOf(point));
+	}
+	
 }
